@@ -1,0 +1,75 @@
+/* Axis Build — generated from tokens.json */
+:root, [data-theme="light"] {
+  --surface: #ffffff;
+  --surface-tint: #f3f4fa;
+  --surface-raised: #ffffff;
+  --line: #dde1f2;
+  --logo-tile: #ffffff;
+  --navy-700: #1b2058;
+  --navy-800: #12163f;
+  --navy-900: #0b0e2b;
+  --line-on-navy: #3a4166;
+  --orange: #ec8a33;
+  --orange-text: #a9540b;
+  --on-orange: #12163f;
+  --ink: #12163f;
+  --ink-muted: #3a4166;
+  --ink-subtle: #656b86;
+  --on-navy: #ffffff;
+  --on-navy-muted: #dde1f2;
+  --on-navy-subtle: #b9bed9;
+  --focus: #1b2058;
+  --focus-on-navy: #ec8a33;
+  --success: #1f7a3e;
+  --danger: #b42318;
+  --whatsapp: #25d366;
+  --shadow-card: 0 16px 40px rgba(18, 22, 63, 0.10);
+}
+[data-theme="dark"] {
+  --surface: #0f1338;
+  --surface-tint: #141945;
+  --surface-raised: #171c4a;
+  --line: #2a3063;
+  --logo-tile: #ffffff;
+  --navy-700: #1b2058;
+  --navy-800: #12163f;
+  --navy-900: #0b0e2b;
+  --line-on-navy: #3a4166;
+  --orange: #ec8a33;
+  --orange-text: #f0a05a;
+  --on-orange: #12163f;
+  --ink: #ffffff;
+  --ink-muted: #c9cce0;
+  --ink-subtle: #9aa2c8;
+  --on-navy: #ffffff;
+  --on-navy-muted: #dde1f2;
+  --on-navy-subtle: #b9bed9;
+  --focus: #ec8a33;
+  --focus-on-navy: #ec8a33;
+  --success: #5ccf86;
+  --danger: #ff8f85;
+  --whatsapp: #25d366;
+  --shadow-card: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --font-display: Poppins, "Segoe UI", Arial, sans-serif;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+@font-face { font-family: "Poppins"; src: url("../fonts/Poppins-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../fonts/Poppins-500.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../fonts/Poppins-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../fonts/Poppins-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }

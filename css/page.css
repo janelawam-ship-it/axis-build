@@ -1,0 +1,44 @@
+/* Axis Build — page layout. Sections, grids and the hero. Components come from components.css. */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.container { max-inline-size: 1200px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)); padding-inline-end: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 768px) { .container { padding-inline: var(--space-6); } }
+.section { padding-block: var(--space-8); }
+@media (min-width: 768px) { .section { padding-block: var(--space-9); } }
+.section-tint { background: var(--surface-tint); }
+.section-navy { background: var(--navy-800); color: var(--on-navy); }
+.section-navy .ab-h1, .section-navy .ab-h2 { color: var(--on-navy); }
+.section-navy .ab-body, .section-navy .ab-lead { color: var(--on-navy-muted); }
+.section-navy .ab-eyebrow { color: var(--orange); }
+.two-col { display: grid; gap: var(--space-8); align-items: start; }
+@media (min-width: 900px) { .two-col { grid-template-columns: 1fr 1fr; gap: var(--space-7); } }
+.stack-7 { display: flex; flex-direction: column; gap: var(--space-7); }
+
+/* Hero */
+.hero { background: var(--navy-700); color: var(--on-navy); padding-block: var(--space-8) calc(var(--space-8) + var(--space-7)); }
+@media (min-width: 900px) { .hero { padding-block: var(--space-9) calc(var(--space-9) + var(--space-7)); } }
+.hero .ab-eyebrow { color: var(--orange); }
+.hero .ab-display { color: var(--on-navy); margin-block: var(--space-4) var(--space-5); }
+.hero .ab-lead { color: var(--on-navy-muted); max-inline-size: 560px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-block-start: var(--space-6); }
+.hero-figure { position: relative; margin: 0; }
+.hero-card { display: grid; place-items: center; aspect-ratio: 1; max-inline-size: 100%; background: radial-gradient(circle at 50% 42%, #232a6e 0%, var(--navy-800) 62%); border: 1px solid rgba(255, 255, 255, 0.32); border-radius: var(--radius-lg); box-shadow: var(--shadow-card); padding: var(--space-6); }
+.hero-card img { inline-size: 70%; height: auto; }
+.hero-figure .ab-pill-float { position: absolute; inset-inline-start: var(--space-5); inset-block-end: calc(-1 * var(--space-4)); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45); }
+
+/* Stat strip overlapping the hero */
+.stats-wrap { margin-block-start: calc(-1 * var(--space-7)); position: relative; }
+
+/* Deliveries band */
+.band-section { background: var(--orange); color: var(--on-orange); }
+.band-section .ab-h1, .band-section .ab-lead, .band-section .ab-eyebrow { color: var(--on-orange); }
+.band-section .ab-band { padding: 0; border-radius: 0; }
+
+/* Contact */
+.contact-side { display: flex; flex-direction: column; gap: var(--space-6); }
+.contact-side .ab-contact-list { gap: var(--space-4); }
+
+/* Materials note */
+.note { margin-block-start: var(--space-5); }
+.note a { color: var(--orange-text); font-weight: 600; }
+.note a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
